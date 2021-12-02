@@ -7,7 +7,7 @@
  * Return:  new node
  */
 
-binary_tree_t *binary_tree_insety_right(binary_tree_t *parent, int value)
+binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 {
 	binary_tree_t *new = NULL;
 
@@ -18,7 +18,7 @@ binary_tree_t *binary_tree_insety_right(binary_tree_t *parent, int value)
 	if (!new)
 		return (NULL);
 
-        new->n = value;
+	new->n = value;
 	new->parent = parent;
 	new->right = NULL;
 	new->left = NULL;
